@@ -115,7 +115,6 @@ export const transliterate = (s: string): string => {
     return letter
   })
   s = s.replace(/([єжхцчшщюя])(?=([а-яєіїґё])?|$)/gi, (_, ...groups) => {
-    console.log(groups)
     const letter = otherLetters[groups[0]]
     if (groups[1] !== undefined && /[А-ЯЄІЇҐ]/.test(groups[1])) return letter.toUpperCase()
     if (/[ЄЖХЦЧШЩЮЯ]/.test(groups[0]) && groups[1] === undefined) return letter.toUpperCase()
