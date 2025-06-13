@@ -11,7 +11,9 @@
   "license": "MIT",
   "author": "Kyrylo Zakharov",
   "type": "module",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "standard": {
     "ignore": [
       "./src/tests/"
@@ -28,6 +30,7 @@
     ]
   },
   "scripts": {
+    "build": "tsup",
     "prepack": "tsc",
     "types:check": "tsc --noEmit",
     "standard": "ts-standard -p tsconfig.json ./src",
@@ -35,7 +38,8 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.1",
-    "ts-standard": "^12.0.2"
+    "ts-standard": "^12.0.2",
+    "tsup": "^8.5.0"
   },
   "bugs": {
     "url": "https://github.com/Amice13/ukr-string-processor/issues"
