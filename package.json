@@ -1,0 +1,44 @@
+{
+  "name": "ukr-string-processor",
+  "version": "1.0.0",
+  "description": "Set of tools to process strings in Ukrainian",
+  "keywords": [
+    "string",
+    "data",
+    "cleaning",
+    "processing"
+  ],
+  "license": "MIT",
+  "author": "Kyrylo Zakharov",
+  "type": "module",
+  "main": "index.js",
+  "standard": {
+    "ignore": [
+      "./src/tests/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amice13/ukr-string-processor"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json",
+    "ignore": [
+      "/tests"
+    ]
+  },
+  "scripts": {
+    "prepack": "tsc",
+    "types:check": "tsc --noEmit",
+    "standard": "ts-standard -p tsconfig.json ./src",
+    "test": "node --test './tests/*.*'"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "ts-standard": "^12.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Amice13/ukr-string-processor/issues"
+  },
+  "homepage": "https://github.com/Amice13/ukr-string-processor#readme"
+}
