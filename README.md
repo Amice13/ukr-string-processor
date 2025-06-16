@@ -25,31 +25,32 @@ This package provides a set of utilities to:
 
 Our team used these scripts to clean up the files converted into markdown.
 
-| Function                     | Description                                                                                       |
-| ---------------------------- | ------------------------------------------------------------------------------------------------- |
-| `fixRomeNumbers`             | Replaces Ukrainian characters in Roman numerals in text.                                          |
-| `replaceEllipsis`            | Replaces sequences of dots with a proper ellipsis character.                                      |
-| `toTitleCase`                | Converts string to title case respecting Ukrainian letters and apostrophes.                       |
-| `unifySpaces`                | Normalizes various Unicode space characters to a regular space and collapses multiples.           |
-| `unifyHyphens`               | Replaces different hyphen and dash characters with a standard ASCII hyphen `-`.                   |
-| `replaceUnnecessarySpaces`   | Removes extra spaces where not needed, especially near punctuation.                               |
-| `replaceFalseQuotes`         | Fixes misuse of quote characters, replacing them with typographically correct ones.               |
-| `unifyApostrophes`           | Replaces multiple apostrophe-like characters with a single standard apostrophe `'`.               |
-| `fixSpacesNearQuotes`        | Corrects spacing issues around quotation marks.                                                   |
-| `replaceLatinWithCyryllic`   | Replaces **all** Latin letters that look like Cyrillic with their Cyrillic counterparts.          |
-| `removeDoublePunctuations`   | Removes duplicated punctuation marks in the text.                                                 |
-| `regexLatinToCyryllic`       | Provides a regex for matching Cyryllic words by a word transliterated into Latin.                 |
-| `transliterate`              | Converts Ukrainian Cyrillic text into Latin script using official transliteration rules.          |
-| `strictTrim`                 | Trims strings strictly, removing various Unicode space characters and collapsing multiple spaces. |
-| `replaceFalseApostrophes`    | Fixes apostrophes that are visually similar but incorrect for Ukrainian text.                     |
-| `capitalize`                 | Capitalizes the first letter of a string, respecting language-specific rules.                     |
-| `replaceRuWithUk`            | Replaces Russian letters mistakenly typed with the wrong keyboard layout.                         |
-| `changeKeyboardLayoutEnToUk` | Converts English keyboard layout typed text to Ukrainian layout (e.g., "ghbdsn" → "привіт").      |
-| `replaceLatinSmart`          | Smart replacement of Latin characters within Cyrillic text, preventing false replacements.        |
-| `replaceCyryllicWithLatin`   | Replaces **all** Cyrillic characters with visually similar Latin characters.                      |
-| `replaceLatinInCyryllic`     | Replaces Latin letters that appear inside Cyrillic text with proper Cyrillic letters.             |
-| `fixSpacesNearPunctuations`  | Corrects spaces around punctuation marks for proper typography.                                   |
-| `replaceNumbersWithLetters`  | Converts digits into their spelled-out letter equivalents (e.g. "3оя" → "Зоя".                    |
+| Function                      | Description                                                                                       |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| `capitalize`                  | Capitalizes the first letter of a string, respecting language-specific rules.                     |
+| `changeKeyboardLayoutEnToUk`  | Converts English keyboard layout typed text to Ukrainian layout (e.g., "ghbdsn" → "привіт").      |
+| `fixRomeNumbers`              | Replaces Ukrainian characters in Roman numerals in text.                                          |
+| `fixSpacesNearPunctuations`   | Corrects spaces around punctuation marks for proper typography.                                   |
+| `fixSpacesNearQuotes`         | Corrects spacing issues around quotation marks.                                                   |
+| `regexLatinToCyryllic`        | Provides a regex for matching Cyryllic words by a word transliterated into Latin.                 |
+| `removeDoublePunctuations`    | Removes duplicated punctuation marks in the text.                                                 |
+| `removeSpacesNearApostrophes` | Removes unnecessary spaces around apostrophes if any.                                             |
+| `replaceCyryllicWithLatin`    | Replaces **all** Cyrillic characters with visually similar Latin characters.                      |
+| `replaceEllipsis`             | Replaces sequences of dots with a proper ellipsis character.                                      |
+| `replaceFalseApostrophes`     | Fixes apostrophes that are visually similar but incorrect for Ukrainian text.                     |
+| `replaceFalseQuotes`          | Fixes misuse of quote characters, replacing them with typographically correct ones.               |
+| `replaceLatinInCyryllic`      | Replaces Latin letters that appear inside Cyrillic text with proper Cyrillic letters.             |
+| `replaceLatinSmart`           | Smart replacement of Latin characters within Cyrillic text, preventing false replacements.        |
+| `replaceLatinWithCyryllic`    | Replaces **all** Latin letters that look like Cyrillic with their Cyrillic counterparts.          |
+| `replaceNumbersWithLetters`   | Converts digits into their spelled-out letter equivalents (e.g. "3оя" → "Зоя").                   |
+| `replaceRuWithUk`             | Replaces Russian letters mistakenly typed with the wrong keyboard layout.                         |
+| `replaceUnnecessarySpaces`    | Removes extra spaces where not needed, especially near punctuation.                               |
+| `strictTrim`                  | Trims strings strictly, removing various Unicode space characters and collapsing multiple spaces. |
+| `toTitleCase`                 | Converts string to title case respecting Ukrainian letters and apostrophes.                       |
+| `transliterate`               | Converts Ukrainian Cyrillic text into Latin script using official transliteration rules.          |
+| `unifyApostrophes`            | Replaces multiple apostrophe-like characters with a single standard apostrophe `'`.               |
+| `unifyHyphens`                | Replaces different hyphen and dash characters with a standard ASCII hyphen `-`.                   |
+| `unifySpaces`                 | Normalizes various Unicode space characters to a regular space and collapses multiples.           |
 
 ---
 
