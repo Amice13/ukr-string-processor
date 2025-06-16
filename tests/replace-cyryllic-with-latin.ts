@@ -32,6 +32,3 @@ describe('replaceCyryllicWithLatin', () => {
     assert.equal(replaceCyryllicWithLatin(input), input)
   })
 })
-
-// actual: 'AБBГД aбвгд TEST тecт',
-//     expected: 'AБВГД aбвгд TEST тeст',
