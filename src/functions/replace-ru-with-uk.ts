@@ -1,4 +1,4 @@
-const russianToUkraine: Record<string,string> = {
+const russianToUkraine: Record<string, string> = {
   Ы: 'І',
   Ъ: 'Ї',
   ы: 'і',
