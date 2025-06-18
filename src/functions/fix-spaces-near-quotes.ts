@@ -1,4 +1,4 @@
-const quoteWithoutSpaceStart = /(?<=[^ ])(«)/g
+const quoteWithoutSpaceStart = /(?<=[^ ])([“„«])/g
 const quoteWithoutSpaceEnd = /([”»″\u201d])(?=[А-яЄІЇҐЁєіїґёa-z\d])/g
 const quoteSpacePatternStart = /([“„«\u201c]) */g
 const quoteSpacePatternEnd = / *([”»″\u201d])/g

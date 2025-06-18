@@ -50,6 +50,7 @@ Our team used these scripts to clean up the files converted into markdown.
 | `transliterate`               | Converts Ukrainian Cyrillic text into Latin script using official transliteration rules.          |
 | `unifyApostrophes`            | Replaces multiple apostrophe-like characters with a single standard apostrophe `'`.               |
 | `unifyHyphens`                | Replaces different hyphen and dash characters with a standard ASCII hyphen `-`.                   |
+| `unifyQuotes`                 | Replaces different quote characters with a single standard quote `"`.                             |
 | `unifySpaces`                 | Normalizes various Unicode space characters to a regular space and collapses multiples.           |
 
 ---

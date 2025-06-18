@@ -21,6 +21,7 @@ import { toTitleCase } from './functions/to-title-case.ts'
 import { transliterate } from './functions/transliterate.ts'
 import { unifyApostrophes } from './functions/unify-apostrophes.ts'
 import { unifyHyphens } from './functions/unify-hyphens.ts'
+import { unifyQuotes } from './functions/unify-quotes.ts'
 import { unifySpaces } from './functions/unify-spaces.ts'
 
 export {
@@ -47,5 +48,6 @@ export {
   transliterate,
   unifyApostrophes,
   unifyHyphens,
+  unifyQuotes,
   unifySpaces
 }

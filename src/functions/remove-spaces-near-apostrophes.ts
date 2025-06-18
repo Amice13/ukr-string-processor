@@ -14,7 +14,7 @@ const apostrophesPattern = `[${apostrophes.join('')}]`
 const consonantsPattern = `[${allConsonants.join('')}]`
 const vowelsPattern = `[${targetVowels.join('')}]`
 
-const replacementPattern = new RegExp(`(?<=${consonantsPattern})(?: ${apostrophesPattern}|${apostrophesPattern} )(?=${vowelsPattern})`, 'gi')
+const replacementPattern = new RegExp(`(?<=${consonantsPattern}) ?${apostrophesPattern} ?(?=${vowelsPattern})`, 'gi')
 
 export const removeSpacesNearApostrophes = (s: string, replacement = '\''): string => {
   return s.replace(replacementPattern, replacement)

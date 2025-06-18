@@ -3,6 +3,10 @@ import assert from 'node:assert/strict'
 import { replaceLatinWithCyryllic } from '../src/functions/replace-latin-with-cyryllic.ts'
 
 describe('replaceLatinWithCyryllic', () => {
+  it('handles edge cases for some fonts', () => {
+    assert.equal(replaceLatinWithCyryllic('пuво'), 'пиво')
+  })
+
   it('replaces all supported uppercase Latin letters with Cyrillic equivalents', () => {
     assert.equal(replaceLatinWithCyryllic('ABCEHIKMOPTX'), 'АВСЕНІКМОРТХ')
   })

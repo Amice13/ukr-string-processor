@@ -23,10 +23,11 @@ const latinToCyrillic: Record<string, string> = {
   o: 'о',
   p: 'р',
   y: 'у',
-  x: 'х'
+  x: 'х',
+  u: 'и'
 }
 
-const latinPattern = /[ABCEHIKMOPTXaceiopyx]/g
+const latinPattern = /[ABCEHIKMOPTXaceiopyxu]/g
 
 const latinInCyryllicPattern = new RegExp(`(?<=^|${notLetter})(?:${ukr}+${latin}${anyLetter}*|${latin}+${ukr}${anyLetter}*)`, 'gi')
 

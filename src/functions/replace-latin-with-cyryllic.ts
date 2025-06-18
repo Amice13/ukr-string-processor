@@ -18,10 +18,11 @@ const latinToCyrillic: Record<string, string> = {
   o: 'о',
   p: 'р',
   y: 'у',
-  x: 'х'
+  x: 'х',
+  u: 'и'
 }
 
-const latinPattern = /[ABCEHIKMOPTXaceiopyx]/g
+const latinPattern = /[ABCEHIKMOPTXaceiopyxu]/g
 
 export const replaceLatinWithCyryllic = (s: string): string => {
   return s.replace(latinPattern, (letter: string): string => latinToCyrillic[letter])
