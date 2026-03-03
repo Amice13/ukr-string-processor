@@ -1,6 +1,6 @@
 {
   "name": "ukr-string-processor",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Set of tools to process strings in Ukrainian",
   "keywords": [
     "string",
@@ -12,8 +12,14 @@
   "author": "Kyrylo Zakharov",
   "type": "module",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "standard": {
     "ignore": [
       "./src/tests/"
